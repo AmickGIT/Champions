@@ -67,6 +67,11 @@ PyCharm / VS Code Python settings (if local to env)
 .ruff_cache/
 .mypy_cache/
 
+# Databases
+db.sqlite3
+*.sqlite3
+db.sqlite3-journal
+
 # ==========================================
 # ENV & SECRETS (Critical Security)
 # ==========================================

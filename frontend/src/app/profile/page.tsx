@@ -20,8 +20,8 @@ export default function ProfilePage() {
           api.get("auctions/")
         ]);
         setProfile(profRes.data);
-        setTransactions(transRes.data);
-        setAuctions(auctRes.data);
+        setTransactions(transRes.data.results || transRes.data);
+        setAuctions(auctRes.data.results || auctRes.data);
       } catch (err) {
         console.error("Failed to load profile data");
       } finally {

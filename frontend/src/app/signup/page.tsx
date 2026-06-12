@@ -31,6 +31,7 @@ export default function Signup() {
         username,
         email,
         password,
+        password2: confirmPassword,
       });
 
       // 2. Auto login
